@@ -1,0 +1,15 @@
+{
+  "name": "feedback-server",
+  "version": "1.0.0",
+  "description": "Web server with a single endpoint that accepts feedback.",
+  "main": "feedback.js",
+  "dependencies": {
+    "express": "~4.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node feedback.js"
+  },
+  "author": "Ernesto Elsäßer",
+  "license": "GPL"
+}
