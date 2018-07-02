@@ -15,6 +15,8 @@
 		94069AE520EAB7F200D41416 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADF20EAB7F200D41416 /* TodoItem.swift */; };
 		94069AE620EAB7F200D41416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94069AE020EAB7F200D41416 /* Main.storyboard */; };
 		94069AE720EAB7F200D41416 /* TodoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */; };
+		94069AE920EABA9300D41416 /* AutoLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */; };
+		94069AEB20EABBC000D41416 /* AutoLayoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		94069ADF20EAB7F200D41416 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		94069AE020EAB7F200D41416 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewController.swift; sourceTree = "<group>"; };
+		94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				94069ADD20EAB7F100D41416 /* SimpleCollectionViewCell.swift */,
 				94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */,
 				94069ADF20EAB7F200D41416 /* TodoItem.swift */,
+				94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */,
+				94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */,
 				94069AE020EAB7F200D41416 /* Main.storyboard */,
 				94069AD120EAB7A800D41416 /* Assets.xcassets */,
 				94069AD620EAB7A800D41416 /* Info.plist */,
@@ -146,7 +152,9 @@
 				94069AE720EAB7F200D41416 /* TodoCollectionViewController.swift in Sources */,
 				94069AE520EAB7F200D41416 /* TodoItem.swift in Sources */,
 				94069AE420EAB7F200D41416 /* ManualCollectionViewController.swift in Sources */,
+				94069AE920EABA9300D41416 /* AutoLayoutCollectionViewCell.swift in Sources */,
 				94069AE320EAB7F200D41416 /* SimpleCollectionViewCell.swift in Sources */,
+				94069AEB20EABBC000D41416 /* AutoLayoutCollectionViewController.swift in Sources */,
 				94069AE220EAB7F200D41416 /* CollectionViewController.swift in Sources */,
 				94069ACB20EAB7A600D41416 /* AppDelegate.swift in Sources */,
 			);
