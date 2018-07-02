@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SingleColumnCollection
+//  CollectionViewDemo
 //
-//  Created by Ernesto Elsäßer on 10.06.18.
+//  Created by Ernesto Elsäßer on 02.07.18.
 //  Copyright © 2018 Ernesto Elsaesser. All rights reserved.
 //
 
