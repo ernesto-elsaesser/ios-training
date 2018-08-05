@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SimpleCollectionViewCell: UICollectionViewCell {
+class ProgrammaticCollectionViewCell: UICollectionViewCell {
     
-    static let reuseIdentifier = "SimpleCollectionViewCell"
+    static let reuseIdentifier = "ProgrammaticCollectionViewCell"
     
     private var titleLabel: UILabel!
     

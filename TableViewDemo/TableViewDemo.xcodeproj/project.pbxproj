@@ -9,29 +9,35 @@
 /* Begin PBXBuildFile section */
 		94069ACB20EAB7A600D41416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ACA20EAB7A600D41416 /* AppDelegate.swift */; };
 		94069AD220EAB7A800D41416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94069AD120EAB7A800D41416 /* Assets.xcassets */; };
-		94069AE220EAB7F200D41416 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADC20EAB7F100D41416 /* CollectionViewController.swift */; };
-		94069AE320EAB7F200D41416 /* ProgrammaticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADD20EAB7F100D41416 /* ProgrammaticCollectionViewCell.swift */; };
-		94069AE420EAB7F200D41416 /* ManualCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADE20EAB7F200D41416 /* ManualCollectionViewController.swift */; };
+		94069AE220EAB7F200D41416 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADC20EAB7F100D41416 /* TableViewController.swift */; };
+		94069AE420EAB7F200D41416 /* ManualTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADE20EAB7F200D41416 /* ManualTableViewController.swift */; };
 		94069AE520EAB7F200D41416 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069ADF20EAB7F200D41416 /* TodoItem.swift */; };
 		94069AE620EAB7F200D41416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94069AE020EAB7F200D41416 /* Main.storyboard */; };
-		94069AE720EAB7F200D41416 /* TodoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */; };
-		94069AE920EABA9300D41416 /* AutoLayoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */; };
-		94069AEB20EABBC000D41416 /* AutoLayoutCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */; };
+		94069AE720EAB7F200D41416 /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE120EAB7F200D41416 /* TodoTableViewController.swift */; };
+		94069AE920EABA9300D41416 /* AutoLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AE820EABA9300D41416 /* AutoLayoutTableViewCell.swift */; };
+		94069AEB20EABBC000D41416 /* AutoLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94069AEA20EABBC000D41416 /* AutoLayoutTableViewController.swift */; };
+		946FF5A72117339F00212603 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5A62117339F00212603 /* TodoTableViewCell.swift */; };
+		946FF5A92117358B00212603 /* PredefinedCellTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5A82117358B00212603 /* PredefinedCellTableViewController.swift */; };
+		946FF5AB211735CF00212603 /* PredefinedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5AA211735CF00212603 /* PredefinedTableViewCell.swift */; };
+		946FF5AD2117376E00212603 /* ManualTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5AC2117376E00212603 /* ManualTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		94069AC720EAB7A600D41416 /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94069AC720EAB7A600D41416 /* TableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94069ACA20EAB7A600D41416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94069AD120EAB7A800D41416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94069AD620EAB7A800D41416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94069ADC20EAB7F100D41416 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		94069ADD20EAB7F100D41416 /* ProgrammaticCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticCollectionViewCell.swift; sourceTree = "<group>"; };
-		94069ADE20EAB7F200D41416 /* ManualCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualCollectionViewController.swift; sourceTree = "<group>"; };
+		94069ADC20EAB7F100D41416 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		94069ADE20EAB7F200D41416 /* ManualTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualTableViewController.swift; sourceTree = "<group>"; };
 		94069ADF20EAB7F200D41416 /* TodoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
 		94069AE020EAB7F200D41416 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoCollectionViewController.swift; sourceTree = "<group>"; };
-		94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutCollectionViewCell.swift; sourceTree = "<group>"; };
-		94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutCollectionViewController.swift; sourceTree = "<group>"; };
+		94069AE120EAB7F200D41416 /* TodoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		94069AE820EABA9300D41416 /* AutoLayoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableViewCell.swift; sourceTree = "<group>"; };
+		94069AEA20EABBC000D41416 /* AutoLayoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableViewController.swift; sourceTree = "<group>"; };
+		946FF5A62117339F00212603 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		946FF5A82117358B00212603 /* PredefinedCellTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedCellTableViewController.swift; sourceTree = "<group>"; };
+		946FF5AA211735CF00212603 /* PredefinedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedTableViewCell.swift; sourceTree = "<group>"; };
+		946FF5AC2117376E00212603 /* ManualTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,7 @@
 		94069ABE20EAB7A600D41416 = {
 			isa = PBXGroup;
 			children = (
-				94069AC920EAB7A600D41416 /* CollectionViewDemo */,
+				94069AC920EAB7A600D41416 /* TableViewDemo */,
 				94069AC820EAB7A600D41416 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,35 +62,38 @@
 		94069AC820EAB7A600D41416 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94069AC720EAB7A600D41416 /* CollectionViewDemo.app */,
+				94069AC720EAB7A600D41416 /* TableViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94069AC920EAB7A600D41416 /* CollectionViewDemo */ = {
+		94069AC920EAB7A600D41416 /* TableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
 				94069ACA20EAB7A600D41416 /* AppDelegate.swift */,
-				94069ADC20EAB7F100D41416 /* CollectionViewController.swift */,
-				94069ADE20EAB7F200D41416 /* ManualCollectionViewController.swift */,
-				94069ADD20EAB7F100D41416 /* ProgrammaticCollectionViewCell.swift */,
-				94069AE120EAB7F200D41416 /* TodoCollectionViewController.swift */,
+				94069ADC20EAB7F100D41416 /* TableViewController.swift */,
+				946FF5A82117358B00212603 /* PredefinedCellTableViewController.swift */,
+				946FF5AA211735CF00212603 /* PredefinedTableViewCell.swift */,
+				94069ADE20EAB7F200D41416 /* ManualTableViewController.swift */,
+				946FF5AC2117376E00212603 /* ManualTableViewCell.swift */,
+				94069AE120EAB7F200D41416 /* TodoTableViewController.swift */,
+				946FF5A62117339F00212603 /* TodoTableViewCell.swift */,
 				94069ADF20EAB7F200D41416 /* TodoItem.swift */,
-				94069AEA20EABBC000D41416 /* AutoLayoutCollectionViewController.swift */,
-				94069AE820EABA9300D41416 /* AutoLayoutCollectionViewCell.swift */,
+				94069AEA20EABBC000D41416 /* AutoLayoutTableViewController.swift */,
+				94069AE820EABA9300D41416 /* AutoLayoutTableViewCell.swift */,
 				94069AE020EAB7F200D41416 /* Main.storyboard */,
 				94069AD120EAB7A800D41416 /* Assets.xcassets */,
 				94069AD620EAB7A800D41416 /* Info.plist */,
 			);
-			path = CollectionViewDemo;
+			path = TableViewDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94069AC620EAB7A600D41416 /* CollectionViewDemo */ = {
+		94069AC620EAB7A600D41416 /* TableViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94069AD920EAB7A800D41416 /* Build configuration list for PBXNativeTarget "CollectionViewDemo" */;
+			buildConfigurationList = 94069AD920EAB7A800D41416 /* Build configuration list for PBXNativeTarget "TableViewDemo" */;
 			buildPhases = (
 				94069AC320EAB7A600D41416 /* Sources */,
 				94069AC420EAB7A600D41416 /* Frameworks */,
@@ -94,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = CollectionViewDemo;
+			name = TableViewDemo;
 			productName = CollectionViewDemo;
-			productReference = 94069AC720EAB7A600D41416 /* CollectionViewDemo.app */;
+			productReference = 94069AC720EAB7A600D41416 /* TableViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94069AC220EAB7A600D41416 /* Build configuration list for PBXProject "CollectionViewDemo" */;
+			buildConfigurationList = 94069AC220EAB7A600D41416 /* Build configuration list for PBXProject "TableViewDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +136,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94069AC620EAB7A600D41416 /* CollectionViewDemo */,
+				94069AC620EAB7A600D41416 /* TableViewDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -149,14 +158,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94069AE720EAB7F200D41416 /* TodoCollectionViewController.swift in Sources */,
+				94069AE720EAB7F200D41416 /* TodoTableViewController.swift in Sources */,
 				94069AE520EAB7F200D41416 /* TodoItem.swift in Sources */,
-				94069AE420EAB7F200D41416 /* ManualCollectionViewController.swift in Sources */,
-				94069AE920EABA9300D41416 /* AutoLayoutCollectionViewCell.swift in Sources */,
-				94069AE320EAB7F200D41416 /* ProgrammaticCollectionViewCell.swift in Sources */,
-				94069AEB20EABBC000D41416 /* AutoLayoutCollectionViewController.swift in Sources */,
-				94069AE220EAB7F200D41416 /* CollectionViewController.swift in Sources */,
+				94069AE420EAB7F200D41416 /* ManualTableViewController.swift in Sources */,
+				946FF5A72117339F00212603 /* TodoTableViewCell.swift in Sources */,
+				94069AE920EABA9300D41416 /* AutoLayoutTableViewCell.swift in Sources */,
+				946FF5A92117358B00212603 /* PredefinedCellTableViewController.swift in Sources */,
+				94069AEB20EABBC000D41416 /* AutoLayoutTableViewController.swift in Sources */,
+				94069AE220EAB7F200D41416 /* TableViewController.swift in Sources */,
+				946FF5AD2117376E00212603 /* ManualTableViewCell.swift in Sources */,
 				94069ACB20EAB7A600D41416 /* AppDelegate.swift in Sources */,
+				946FF5AB211735CF00212603 /* PredefinedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +295,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
+				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.CollectionViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.TableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,12 +313,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = CollectionViewDemo/Info.plist;
+				INFOPLIST_FILE = TableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.CollectionViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.TableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94069AC220EAB7A600D41416 /* Build configuration list for PBXProject "CollectionViewDemo" */ = {
+		94069AC220EAB7A600D41416 /* Build configuration list for PBXProject "TableViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94069AD720EAB7A800D41416 /* Debug */,
@@ -325,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94069AD920EAB7A800D41416 /* Build configuration list for PBXNativeTarget "CollectionViewDemo" */ = {
+		94069AD920EAB7A800D41416 /* Build configuration list for PBXNativeTarget "TableViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94069ADA20EAB7A800D41416 /* Debug */,

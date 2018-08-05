@@ -23,7 +23,7 @@ class ManualCollectionViewController: UIViewController {
         collectionView.backgroundColor = UIColor(white: 0.92, alpha: 1)
         collectionView.dataSource = self
         
-        collectionView.register(SimpleCollectionViewCell.self, forCellWithReuseIdentifier: SimpleCollectionViewCell.reuseIdentifier)
+        collectionView.register(ProgrammaticCollectionViewCell.self, forCellWithReuseIdentifier: ProgrammaticCollectionViewCell.reuseIdentifier)
         
         view.addSubview(collectionView)
     }
@@ -36,9 +36,9 @@ extension ManualCollectionViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SimpleCollectionViewCell.reuseIdentifier, for: indexPath)
-        let simpleCell = cell as! SimpleCollectionViewCell
-        simpleCell.configure(title: "Line #\(indexPath.item)")
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProgrammaticCollectionViewCell.reuseIdentifier, for: indexPath)
+        let simpleCell = cell as! ProgrammaticCollectionViewCell
+        simpleCell.configure(title: "CELL #\(indexPath.item)")
         return simpleCell
     }
 }

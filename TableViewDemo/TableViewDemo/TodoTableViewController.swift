@@ -1,6 +1,6 @@
 //
-//  TodoCollectionViewController.swift
-//  CollectionViewDemo
+//  TodoTableViewController.swift
+//  TableViewDemo
 //
 //  Created by Ernesto Elsäßer on 02.07.18.
 //  Copyright © 2018 Ernesto Elsaesser. All rights reserved.
@@ -8,37 +8,27 @@
 
 import UIKit
 
-class TodoCollectionViewController : UICollectionViewController {
+class TodoTableViewController : UITableViewController {
     
     private var todoItems : [TodoItem] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.itemSize = CGSize(width: view.frame.width, height: 40)
-        }
-        
-        collectionView?.register(ProgrammaticCollectionViewCell.self, forCellWithReuseIdentifier: ProgrammaticCollectionViewCell.reuseIdentifier)
-    }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         self.loadTodoItems()
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoItems.count
     }
     
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProgrammaticCollectionViewCell.reuseIdentifier, for: indexPath)
-        let simpleCell = cell as! ProgrammaticCollectionViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoTableViewCell") as! TodoTableViewCell
         let item = todoItems[indexPath.item]
-        let title = "TODO #\(indexPath.item + 1): \(item.title)"
-        simpleCell.configure(title: title)
-        return simpleCell
+        cell.load(todoItem: item)
+        
+        return cell
     }
     
     func loadTodoItems() {
@@ -50,7 +40,7 @@ class TodoCollectionViewController : UICollectionViewController {
             self.todoItems = self.parseTodoItems(data: data)
             
             DispatchQueue.main.async {
-                self.collectionView?.reloadData()
+                self.tableView.reloadData()
             }
         }
         
