@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		946FF5AF21174CC700212603 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5AE21174CC700212603 /* GameViewController.swift */; };
+		946FF5B12117544200212603 /* NappyNapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946FF5B02117544200212603 /* NappyNapViewController.swift */; };
 		94860F2220CD92E300B1E0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94860F2120CD92E300B1E0EE /* Main.storyboard */; };
 		94BB91E720CD3AC500FEFCA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB91E620CD3AC500FEFCA3 /* AppDelegate.swift */; };
-		94BB921720CD418300FEFCA3 /* MarkableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB921620CD418300FEFCA3 /* MarkableTableViewCell.swift */; };
+		94BB921720CD418300FEFCA3 /* StudentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB921620CD418300FEFCA3 /* StudentCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		946FF5AE21174CC700212603 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		946FF5B02117544200212603 /* NappyNapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NappyNapViewController.swift; sourceTree = "<group>"; };
 		94860F2120CD92E300B1E0EE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		94BB91E320CD3AC500FEFCA3 /* GameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BB91E320CD3AC500FEFCA3 /* NappyNap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NappyNap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BB91E620CD3AC500FEFCA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94BB91F220CD3AC700FEFCA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		94BB921620CD418300FEFCA3 /* MarkableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkableTableViewCell.swift; sourceTree = "<group>"; };
+		94BB921620CD418300FEFCA3 /* StudentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 		94BB91DA20CD3AC500FEFCA3 = {
 			isa = PBXGroup;
 			children = (
-				94BB91E520CD3AC500FEFCA3 /* GameDemo */,
+				94BB91E520CD3AC500FEFCA3 /* NappyNap */,
 				94BB91E420CD3AC500FEFCA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,29 +44,29 @@
 		94BB91E420CD3AC500FEFCA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94BB91E320CD3AC500FEFCA3 /* GameDemo.app */,
+				94BB91E320CD3AC500FEFCA3 /* NappyNap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		94BB91E520CD3AC500FEFCA3 /* GameDemo */ = {
+		94BB91E520CD3AC500FEFCA3 /* NappyNap */ = {
 			isa = PBXGroup;
 			children = (
 				94BB91E620CD3AC500FEFCA3 /* AppDelegate.swift */,
-				946FF5AE21174CC700212603 /* GameViewController.swift */,
-				94BB921620CD418300FEFCA3 /* MarkableTableViewCell.swift */,
+				946FF5B02117544200212603 /* NappyNapViewController.swift */,
+				94BB921620CD418300FEFCA3 /* StudentCollectionViewCell.swift */,
 				94860F2120CD92E300B1E0EE /* Main.storyboard */,
 				94BB91F220CD3AC700FEFCA3 /* Info.plist */,
 			);
-			path = GameDemo;
+			path = NappyNap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		94BB91E220CD3AC500FEFCA3 /* GameDemo */ = {
+		94BB91E220CD3AC500FEFCA3 /* NappyNap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94BB920B20CD3AC700FEFCA3 /* Build configuration list for PBXNativeTarget "GameDemo" */;
+			buildConfigurationList = 94BB920B20CD3AC700FEFCA3 /* Build configuration list for PBXNativeTarget "NappyNap" */;
 			buildPhases = (
 				94BB91DF20CD3AC500FEFCA3 /* Sources */,
 				94BB91E020CD3AC500FEFCA3 /* Frameworks */,
@@ -76,9 +76,9 @@
 			);
 			dependencies = (
 			);
-			name = GameDemo;
+			name = NappyNap;
 			productName = tapamole;
-			productReference = 94BB91E320CD3AC500FEFCA3 /* GameDemo.app */;
+			productReference = 94BB91E320CD3AC500FEFCA3 /* NappyNap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 94BB91DE20CD3AC500FEFCA3 /* Build configuration list for PBXProject "GameDemo" */;
+			buildConfigurationList = 94BB91DE20CD3AC500FEFCA3 /* Build configuration list for PBXProject "NappyNap" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,7 +108,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94BB91E220CD3AC500FEFCA3 /* GameDemo */,
+				94BB91E220CD3AC500FEFCA3 /* NappyNap */,
 			);
 		};
 /* End PBXProject section */
@@ -129,9 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946FF5B12117544200212603 /* NappyNapViewController.swift in Sources */,
 				94BB91E720CD3AC500FEFCA3 /* AppDelegate.swift in Sources */,
-				946FF5AF21174CC700212603 /* GameViewController.swift in Sources */,
-				94BB921720CD418300FEFCA3 /* MarkableTableViewCell.swift in Sources */,
+				94BB921720CD418300FEFCA3 /* StudentCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +257,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/GameDemo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NappyNap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.GameDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.NappyNap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -274,12 +274,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "$(SRCROOT)/GameDemo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/NappyNap/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.GameDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.NappyNap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,7 +289,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		94BB91DE20CD3AC500FEFCA3 /* Build configuration list for PBXProject "GameDemo" */ = {
+		94BB91DE20CD3AC500FEFCA3 /* Build configuration list for PBXProject "NappyNap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94BB920920CD3AC700FEFCA3 /* Debug */,
@@ -298,7 +298,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		94BB920B20CD3AC700FEFCA3 /* Build configuration list for PBXNativeTarget "GameDemo" */ = {
+		94BB920B20CD3AC700FEFCA3 /* Build configuration list for PBXNativeTarget "NappyNap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94BB920C20CD3AC700FEFCA3 /* Debug */,
