@@ -37,6 +37,8 @@ class TodoTableViewController : UITableViewController {
         
         let handler = { (data : Data?, response : URLResponse?, error: Error?) in
             
+            // Error handling should go here
+            
             self.todoItems = self.parseTodoItems(data: data)
             
             DispatchQueue.main.async {

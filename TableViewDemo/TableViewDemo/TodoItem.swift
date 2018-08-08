@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct TodoItem: Codable {
+struct TodoItem: Decodable {
     
-    //let userId: Int
+    let userId: Int
     let id: Int
     let title: String
     let completed: Bool
