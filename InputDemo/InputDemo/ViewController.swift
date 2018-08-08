@@ -7,18 +7,10 @@ public class ViewController: UIViewController {
     
     let bottomMargin: CGFloat = 120
     
-    public init() {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .gray
+        view.backgroundColor = .lightGray
         
         let textField = UITextField()
         textField.borderStyle = .roundedRect

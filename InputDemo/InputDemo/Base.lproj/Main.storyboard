@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="rvU-NJ-9IQ">
             <objects>
-                <viewController modalPresentationStyle="currentContext" id="KCe-gK-f8D" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="currentContext" id="KCe-gK-f8D" customClass="ViewController" customModule="InputDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2vO-oU-qGr"/>
                         <viewControllerLayoutGuide type="bottom" id="EeG-am-me8"/>
@@ -27,79 +27,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uq-32-1VQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="-20.239880059970016"/>
-        </scene>
-        <!--My Page View Controller-->
-        <scene sceneID="Lpp-cE-0J5">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="GhC-hL-TN4" customClass="MyPageViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gU6-CU-Q0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2078" y="-29"/>
-        </scene>
-        <!--Dynamic Table View Controller-->
-        <scene sceneID="tCH-f4-js3">
-            <objects>
-                <tableViewController id="Dtj-xn-wfB" customClass="DynamicTableViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="28" sectionFooterHeight="28" id="kDD-7n-WbI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="110" id="rhR-ks-SPh" customClass="DynamicTableViewCell" customModule="Demo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="110"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rhR-ks-SPh" id="t4o-jA-qwf">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="109.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ch-Gr-3Qi">
-                                            <rect key="frame" x="20" y="20" width="47" height="21"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldfds fsdfsdf sfs fsdf sd fsdf sdfsdf sd" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iW-cN-jeQ">
-                                            <rect key="frame" x="20" y="56" width="115" height="33.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FHQ-Sc-Vpz">
-                                            <rect key="frame" x="155" y="20" width="200" height="69.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="200" id="uUO-51-4js"/>
-                                            </constraints>
-                                        </imageView>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="FHQ-Sc-Vpz" secondAttribute="trailing" constant="20" id="1Zk-hp-3ya"/>
-                                        <constraint firstItem="3iW-cN-jeQ" firstAttribute="top" secondItem="4ch-Gr-3Qi" secondAttribute="bottom" constant="15" id="8PT-Ig-fiJ"/>
-                                        <constraint firstItem="4ch-Gr-3Qi" firstAttribute="leading" secondItem="t4o-jA-qwf" secondAttribute="leading" constant="20" id="FPR-3G-9Qy"/>
-                                        <constraint firstItem="4ch-Gr-3Qi" firstAttribute="top" secondItem="t4o-jA-qwf" secondAttribute="top" constant="20" id="GTJ-lz-175"/>
-                                        <constraint firstItem="FHQ-Sc-Vpz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4ch-Gr-3Qi" secondAttribute="trailing" constant="20" id="H2b-kg-U4s"/>
-                                        <constraint firstItem="3iW-cN-jeQ" firstAttribute="leading" secondItem="t4o-jA-qwf" secondAttribute="leading" constant="20" id="UHc-BY-gPu"/>
-                                        <constraint firstItem="FHQ-Sc-Vpz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3iW-cN-jeQ" secondAttribute="trailing" constant="20" id="vkh-rN-dr5"/>
-                                        <constraint firstAttribute="bottom" secondItem="FHQ-Sc-Vpz" secondAttribute="bottom" constant="20" id="wRQ-AB-eYH"/>
-                                        <constraint firstAttribute="bottom" secondItem="3iW-cN-jeQ" secondAttribute="bottom" constant="20" id="yUh-lF-fEz"/>
-                                        <constraint firstItem="FHQ-Sc-Vpz" firstAttribute="top" secondItem="t4o-jA-qwf" secondAttribute="top" constant="20" id="z5B-Vu-7Lx"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="descriptionLabel" destination="3iW-cN-jeQ" id="WJh-RK-2Ul"/>
-                                    <outlet property="dynamicImage" destination="FHQ-Sc-Vpz" id="miQ-Ao-civ"/>
-                                    <outlet property="titleLabel" destination="4ch-Gr-3Qi" id="B2k-uJ-LXE"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Dtj-xn-wfB" id="wtc-0v-ExL"/>
-                            <outlet property="delegate" destination="Dtj-xn-wfB" id="5Jo-vH-RMd"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qz-3e-btK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1279" y="394"/>
         </scene>
     </scenes>
 </document>
