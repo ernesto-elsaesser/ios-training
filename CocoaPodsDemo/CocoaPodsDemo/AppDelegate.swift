@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  CCFW
+//  CocoaPodsDemo
 //
 //  Created by Ernesto Elsäßer on 10.04.17.
 //  Copyright © 2017 DHBW. All rights reserved.

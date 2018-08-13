@@ -26,10 +26,6 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-# Carthage
-Carthage/Checkouts
-Carthage/Build
-
 # Node.js
 node_modules/
 
