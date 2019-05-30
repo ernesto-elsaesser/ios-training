@@ -1,20 +1,26 @@
-# Prerequisites 
+# iOS Training - Lessons
+
+Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-training/blob/master/slides.pdf)
+
+## Prerequisites 
 - MacBook
 - Apple ID
 - Xcode
 - CocoaPods
 - iOS device (optional)
 
-# Day 1
+
+# Unit 1
+
 
 ## Introduction
-- Introduction Round [SLIDE]
-- Schedule [SLIDE]
-- iOS (what’s different) [SLIDE]
+- **Introduction Round**
+- **Schedule**
+- **iOS (what’s different)**
 
 ## Swift I 
-- Language [SLIDE]
-- Safety [SLIDE]
+- **Language**
+- **Safety**
 - Creating an Xcode Playground
 - Strong typing
 - Constants and variables
@@ -26,23 +32,31 @@
 - Control flow (if else, guard, while, for in)
 
 ## Swift II
-- Optionals (?, if let, default, force, inline unwrapping)
-- Collections [SLIDE]
-- Classes (properties and methods, computed properties, instances / constructors)
-- Scope (private, public)
+- Optionals
+  - Operators
+  - Force Unwrapped Optionals
+- **Collections**
+- Classes
+  - Properties
+  - Methods
+  - Computed properties
+  - Constructors
+- Scope
 - Inheritance
 - Protocols
 
 ## Apps 
-- App Architecture [SLIDE]
-- App Lifecycle [SLIDE]
+- **App Architecture**
+- **App Lifecycle**
 
-## Xcode Project Creating a new project  
+## Xcode Project
+- Creating a new project  
 - The Xcode UI
 - Run in Simulator
 - Project Settings
 
-## Xcode Project Template App Delegate   
+## Xcode Project 
+- Template App Delegate   
 - Delegate Pattern
 - View Controller
 - UIViewController
@@ -50,17 +64,19 @@
 - Resource Files
 - Adding Files
 
-# Day 2
+
+# Unit 2
+
 
 ## Storyboards 
-- Coordinate System [SLIDE]
+- **Coordinate System**
 - Examining a Storyboard
 - Views
 - UI Components
 - Buttons
 - IBOutlet & IBAction
-- Task 1 [SLIDE]
-- Task 2 [SLIDE]
+- **Task 1**
+- **Task 2**
 
 ## Navigation
 - UINavigationController
@@ -68,71 +84,72 @@
 - Segues
 
 ## Tables
-- UITableViewController  
-- UITableViewController (subclass)
-- UITableViewControllerDataSource
-- UITableViewControllerDelegate
+- UITableViewController
+  - UITableViewDataSource
+  - UITableViewDelegate
+  - Subclassing
 - TableViewCell
-- TableViewCell (subclass)
-- Segues from cells
-- Task 3 [SLIDE]
+  - Styles
+  - Subclassing
+  - Segues
+- **Task 3**
 
 ## Assets 
-- Asset Catalogue  
-- File Formats  PNG, JPEG, PDF
-- Task 4 [SLIDE]
+- Asset Catalogue
+- File Formats (PNG, JPEG, PDF)
+- **Task 4**
 
 ## Scheduling
-- Dispatch Queues (draw queues) [SLIDE]
-- sync, async, asyncAfter  
+- **Dispatch Queues**
 - Timers
-- Task 5 [SLIDE]
+- **Task 5**
 
 ## Finishing the Game 
-- UIAlertController (alert vs. action sheet)
+- UIAlertController
+  - Alerts
+  - Actions
+  - Actionsheets
 - App icons
 - Launch screen
 - UserDefaults
-- Run on Device (trust Mac, configure signing, trust Apple ID on device)
-- Task 6 [SLIDE]
+- Running on a device
+- **Task 6**
 
-# Day 3
+
+# Unit 3
+
 
 ## Networking 
 - URLSession
 - GET
 - POST
-- Asynchronicity (completion blocks)
+- Asynchronous Callbacks
 - Error Handling
 - Decodable
 
 ## Dependencies
-- Dependency Management [SLIDE]
+- **Dependency Management**
 - Finding Packages (https://github.com/matteocrippa/awesome-swift)
 - CocoaPods
 
 ## Wishlist 
 Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
 
-- Wish 1
-- Wish 2
-- Wish 3
-
 ## Testing 
 - Creating a Test Target
 - Writing Test Cases
 
 ## Platform 
-- Hardware [SLIDE]
-- Software [SLIDE]
+- **Hardware**
+- **Software**
 
 ## Distribution 
 - Provisioning Profiles
 - Certificates
 - Archiving
 - Upload to App Store
-- App Store Process [SLIDE]
-- Pricing [SLIDE]
+- **App Store Process**
+- **Pricing**
 
 ## Feedback 
-- Feedback Round [SLIDE]
+- **Feedback Round**
