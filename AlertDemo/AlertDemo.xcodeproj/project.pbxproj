@@ -251,7 +251,7 @@
 				DEVELOPMENT_TEAM = NS758RRF78;
 				INFOPLIST_FILE = "$(SRCROOT)/AlertDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.InputDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.AlertDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -264,7 +264,7 @@
 				DEVELOPMENT_TEAM = NS758RRF78;
 				INFOPLIST_FILE = "$(SRCROOT)/AlertDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.InputDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = de.elsaesser.AlertDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};

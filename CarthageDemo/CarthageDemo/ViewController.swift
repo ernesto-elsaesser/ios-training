@@ -1,12 +1,13 @@
 //
 //  ViewController.swift
-//  FW
+//  CarthageDemo
 //
 //  Created by Ernesto Elsäßer on 10.04.17.
 //  Copyright © 2017 DHBW. All rights reserved.
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
