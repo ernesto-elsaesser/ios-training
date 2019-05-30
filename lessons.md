@@ -2,7 +2,7 @@
 
 Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-training/blob/master/slides.pdf)
 
-## Prerequisites 
+### Prerequisites:
 - MacBook
 - Apple ID
 - Xcode
@@ -10,7 +10,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - iOS device (optional)
 
 
-# Unit 1
+# Unit 1: Swift & Xcode
 
 
 ## Introduction
@@ -65,7 +65,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Adding Files
 
 
-# Unit 2
+# Unit 2: A simple game
 
 
 ## Storyboards 
@@ -116,7 +116,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - **Task 6**
 
 
-# Unit 3
+# Unit 3: The real world
 
 
 ## Networking 
