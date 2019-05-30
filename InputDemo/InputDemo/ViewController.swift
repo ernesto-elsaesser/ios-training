@@ -36,32 +36,28 @@ public class ViewController: UIViewController {
     override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        NotificationCenter.default.addObserver(
-        forName: .UIKeyboardWillShow, object: nil, queue: .main) { notification in
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { notification in
             
             if
                 let info = notification.userInfo,
-                let frameValue = info[UIKeyboardFrameBeginUserInfoKey] as? NSValue,
-                let durationValue = info[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber {
+                let frameValue = info[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue,
+                let durationValue = info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber {
                 
-                self.animte(to: frameValue.cgRectValue.height, duration: durationValue.doubleValue)
+                self.animate(to: frameValue.cgRectValue.height, duration: durationValue.doubleValue)
             }
-            
-            
         }
         
-        NotificationCenter.default.addObserver(
-        forName: .UIKeyboardWillHide, object: nil, queue: .main) { notification in
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { notification in
             
             if
                 let info = notification.userInfo,
-                let durationValue = info[UIKeyboardAnimationDurationUserInfoKey] as? NSNumber {
-                    self.animte(to: 0, duration: durationValue.doubleValue)
+                let durationValue = info[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber {
+                    self.animate(to: 0, duration: durationValue.doubleValue)
             }
         }
     }
     
-    func animte(to offset: CGFloat, duration: TimeInterval) {
+    func animate(to offset: CGFloat, duration: TimeInterval) {
         
         bottomConstraint.constant = bottomMargin + offset
         UIView.animate(withDuration: duration) {
