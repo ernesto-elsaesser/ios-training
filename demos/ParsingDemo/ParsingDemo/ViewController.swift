@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+struct Todo: Codable {
+    let userId: Int
+    let id: Int
+    let title: String
+    let completed: Bool
+}
 
-    @IBOutlet var textView: UITextView!
+class ViewController: UIViewController {
     
     let downloadUrl = URL(string: "https://jsonplaceholder.typicode.com/todos")!
+    let decoder = JSONDecoder()
 
     @IBAction func downloadSyncTapped(_ sender: Any) {
         
@@ -21,7 +27,6 @@ class ViewController: UIViewController {
             self.parse(data: jsonData)
         } catch {
             self.presentError(error)
-            return
         }
     }
 
@@ -32,14 +37,20 @@ class ViewController: UIViewController {
             if let data = data {
                 self?.parse(data: data)
             } else if let error = error {
-                self.presentError(error)
+                self?.presentError(error)
             }
         }
         task.resume()
     }
     
     func parse(data: Data) {
-        // TODO: implement
+
+        do {
+            let todos = try decoder.decode([Todo].self, from: data)
+            self.presentAlert(title: "Success", message: "Loaded \(todos.count) todos!")
+        } catch {
+            self.presentError(error)
+        }
     }
     
     func presentError(_ error: Error) {
