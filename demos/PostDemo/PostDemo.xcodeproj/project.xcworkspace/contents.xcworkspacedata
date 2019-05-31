@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/ernesto/Projects/ios-training/HTTPPOSTDemo/HTTPPOSTDemo.xcodeproj">
+      location = "self:/Users/ernesto/Projects/ios-training/demos/PostDemo/PostDemo.xcodeproj">
    </FileRef>
 </Workspace>

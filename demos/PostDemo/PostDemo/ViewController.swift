@@ -13,10 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet var textView: UITextView!
     
     let feedbackUrl = URL(string: "http://localhost/feedback")!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBAction func sendFeedback(_ sender: Any) {
         
