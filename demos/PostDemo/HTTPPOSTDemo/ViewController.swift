@@ -27,10 +27,7 @@ class ViewController: UIViewController {
         request.httpBody = textView.text.data(using: .utf8)
         
         let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
-            
-            DispatchQueue.main.async {
-                self?.handleResponse(response: response, error: error)
-            }
+            self?.handleResponse(response: response, error: error)
         }
         task.resume()
     }
@@ -62,7 +59,9 @@ class ViewController: UIViewController {
     func presentAlert(title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true, completion: nil)
+        }
     }
 }
 
