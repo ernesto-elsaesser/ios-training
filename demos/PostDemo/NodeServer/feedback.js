@@ -1,5 +1,4 @@
 var express = require('express');
-var fs = require('fs');
 
 var app = express();
 
@@ -17,20 +16,9 @@ app.use(function(req, res, next) {
   });
 });
 
-app.get('/feedback', function (req, res) {
-  res.status(405).send('This endpoint only supports POST requests!');
-});
-
 app.post('/feedback', function (req, res) {
-
-  fs.appendFile('feedback.txt', req.rawBody + '\n\r', function (err) {
-    if (err) {
-      res.status(500).send('Operation failed: ' + err);
-    } else {
-      res.status(201).send('Feedback accepted!');
-    }
-  });
-
+  console.log('Received feedback: ' + req.rawBody + '\n\r')
+  res.status(201).send('Feedback accepted!');
 });
 
 app.listen(80, function () {
