@@ -19,7 +19,8 @@
 - [ ] Useful information displayed in error cases
 - [ ] Permissions only requested when needed
 - [ ] App size adequate to functionality
-- [ ] Compliant with data protection laws 
+- [ ] Compliant with data protection laws
+- [ ] No 3rd party software licenses violated
 
 ### Distribution
 - [ ] Aligned with App Store Review Guidelines
