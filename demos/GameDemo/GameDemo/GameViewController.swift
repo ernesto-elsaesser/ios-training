@@ -10,125 +10,115 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-    let rowCount = 7
-    
-    // tuneable parameters
+    // adjustable parameters
     let initialTimeUntilMarking: TimeInterval = 2
-    let minimalTimeUntilMarking: TimeInterval = 0.225
+    let minimalTimeUntilMarking: TimeInterval = 0.45
+    let rowCount = 7
     let speed: Double = 0.1
     
-    @IBOutlet var ellapsedTimeLabel: UILabel!
     @IBOutlet var tableView: UITableView!
     @IBOutlet var startButton: UIButton!
     
-    private var unmarkedIndexPaths: Set<IndexPath> = Set()
+    private var unmarkedRows: [Int] = []
     private var difficultyLevel = 0.0
-    private var timer: Timer?
     
-    private var allIndexPaths: Set<IndexPath> {
-        var set = Set<IndexPath>()
-        for row in 0..<rowCount {
-            let indexPath = IndexPath(row: row, section: 0)
-            set.insert(indexPath)
-        }
-        return set
+    @IBAction func startTapped(_ sender: Any) {
+        self.startGame()
     }
     
     private func startGame() {
+        unmarkedRows.removeAll()
+        for row in 0..<rowCount {
+            unmarkedRows.append(row)
+            self.markableCell(in: row)?.marked = false
+        }
         
         startButton.isEnabled = false
-        unmarkedIndexPaths = allIndexPaths
         difficultyLevel = 0
-        ellapsedTimeLabel.textColor = .black
         
-        self.resetCells()
         self.startTimer()
-        self.markRandomSlot()
+        self.markNextRow()
     }
     
-    private func resetCells() {
+    private func markNextRow() {
+        self.markRandomRow()
         
-        for indexPath in allIndexPaths {
-            if let cell = tableView.cellForRow(at: indexPath) as? MarkableTableViewCell {
-                cell.marked = false
+        if unmarkedRows.isEmpty {
+            self.endGame()
+        } else {
+            let interval = self.currentTimeUntilMarkingInMilliseconds()
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(interval)) {
+                self.markNextRow()
             }
         }
     }
     
-    private func startTimer() {
-        
-        let start = Date()
-        
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-            let ellapsedTime = Date().timeIntervalSince(start)
-            let minutes = Int(ellapsedTime) / 60
-            let seconds = Int(ellapsedTime) - (minutes * 60)
-            self?.ellapsedTimeLabel.text = String(format: "%02i:%02i", minutes, seconds)
-        }
+    private func markRandomRow() {
+        let randomIndex = Int.random(in: unmarkedRows.indices)
+        let randomRow = unmarkedRows[randomIndex]
+        unmarkedRows.remove(at: randomIndex)
+        self.markableCell(in: randomRow)?.marked = true
     }
     
-    private func markRandomSlot() {
+    private func currentTimeUntilMarkingInMilliseconds() -> Int {
+        // let the time shrink logistically towards the lower limit (sigmoid curve)
+        let ratioForDifficulty = 2 / (1 + exp(difficultyLevel))
         
-        guard let indexPath = self.randomUnmarkedIndexPath() else {
-            self.endGame()
-            return
-        }
-        
-        guard let cell = tableView.cellForRow(at: indexPath) as? MarkableTableViewCell else {
-            return
-        }
-        
-        cell.marked = true
-        unmarkedIndexPaths.remove(indexPath)
-        
-        self.scheduleNextMarking()
+        let range = initialTimeUntilMarking - minimalTimeUntilMarking
+        let currentTimeUntilMarking = minimalTimeUntilMarking + ratioForDifficulty * range
+        return Int(currentTimeUntilMarking * 1000)
     }
     
-    private func randomUnmarkedIndexPath() -> IndexPath? {
-        
-        guard !unmarkedIndexPaths.isEmpty else {
-            return nil
+    fileprivate func unmark(row: Int) {
+        self.markableCell(in: row)?.marked = false
+        if !unmarkedRows.contains(row) {
+            unmarkedRows.append(row)
         }
-        let array = Array(unmarkedIndexPaths)
-        let index = Int(arc4random_uniform(UInt32(array.count)))
-        return array[index]
-    }
-    
-    private func scheduleNextMarking() {
-        
-        let variance = initialTimeUntilMarking - minimalTimeUntilMarking
-        let secondsUntilNextMarking = ((2 * variance) / (1 + pow(M_E,difficultyLevel))) + minimalTimeUntilMarking
-        let interval = DispatchTimeInterval.milliseconds(Int(secondsUntilNextMarking * 1000))
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + interval) { [weak self] in
-            self?.markRandomSlot()
-        }
-    }
-    
-    fileprivate func unmark(indexPath: IndexPath) {
-        
-        guard timer != nil else {
-            return // not started
-        }
-        
-        guard let cell = tableView.cellForRow(at: indexPath) as? MarkableTableViewCell, cell.marked else {
-            return
-        }
-        
-        unmarkedIndexPaths.insert(indexPath)
-        cell.marked = false
+        difficultyLevel += speed
     }
     
     private func endGame() {
+        self.stopTimer()
+        startButton.isEnabled = true
+        self.presentEndGameAlert()
+    }
+    
+    private func presentEndGameAlert() {
+        let alert = UIAlertController(title: "You lost!", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func markableCell(in row: Int) -> MarkableTableViewCell? {
+        let indexPath = IndexPath(row: row, section: 0)
+        return tableView.cellForRow(at: indexPath) as? MarkableTableViewCell
+    }
+    
+    // MARK: -- Optional Time Counter ---
+    
+    @IBOutlet var ellapsedTimeLabel: UILabel!
+    
+    private var timer: Timer?
+    
+    private func startTimer() {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .positional
+        formatter.zeroFormattingBehavior = .pad
+        formatter.allowedUnits = [.minute, .second]
         
+        let start = Date()
+        ellapsedTimeLabel.text = formatter.string(from: 0)
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            let ellapsedTime = Date().timeIntervalSince(start)
+            self.ellapsedTimeLabel.text = formatter.string(from: ellapsedTime)
+        }
+    }
+    
+    private func stopTimer() {
         timer?.invalidate()
         timer = nil
-        ellapsedTimeLabel.textColor = .red
-        startButton.isEnabled = true
-    }
-
-    @IBAction func startTapped(_ sender: Any) {
-        self.startGame()
     }
 }
 
@@ -150,8 +140,7 @@ extension GameViewController: UITableViewDataSource {
 extension GameViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.unmark(indexPath: indexPath)
-        difficultyLevel += speed
+        self.unmark(row: indexPath.row)
     }
 }
 

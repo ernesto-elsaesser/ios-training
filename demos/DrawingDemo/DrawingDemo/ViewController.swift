@@ -1,29 +1,19 @@
+//
+//  ViewController.swift
+//  DrawingDemo
+//
+//  Created by Ernesto Elsäßer on 04.06.19.
+//  Copyright © 2019 Ernesto Elsäßer. All rights reserved.
+//
+
 import UIKit
 
-public class DrawingViewController: UIViewController {
+class ViewController: UIViewController {
 
-    var imageView: UIImageView!
-    var renderer : UIGraphicsImageRenderer!
-    var currentPath : UIBezierPath?
+    @IBOutlet weak var imageView: UIImageView!
     
-    public init() {
-        super.init(nibName: nil, bundle: nil)
-        self.initialize()
-    }
-    
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.initialize()
-    }
-    
-    func initialize() {
-        view.backgroundColor = .white
-        
-        let imageView = UIImageView()
-        imageView.frame = view.bounds
-        view.addSubview(imageView)
-        self.imageView = imageView
-    }
+    var renderer: UIGraphicsImageRenderer!
+    var currentPath: UIBezierPath?
     
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +25,7 @@ public class DrawingViewController: UIViewController {
         doubleTapRecognizer.numberOfTapsRequired = 2
         view.addGestureRecognizer(doubleTapRecognizer)
     }
-
+    
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard let point = touches.first?.location(in: view) else {
@@ -73,9 +63,7 @@ public class DrawingViewController: UIViewController {
         currentPath = nil
     }
     
-    // gesture recognizer target
-    
-    @IBAction func drawRectangle(recognizer:UITapGestureRecognizer) {
+    @objc func drawRectangle(recognizer: UITapGestureRecognizer) {
         
         guard recognizer.state == .ended else {
             return
@@ -84,25 +72,14 @@ public class DrawingViewController: UIViewController {
         let point = recognizer.location(in: view)
         let rect = CGRect(origin: point, size: CGSize(width: 15, height: 15))
         
-        let fillColor: UIColor
-        switch arc4random_uniform(3) {
-        case 0:
-            fillColor = .red
-        case 1:
-            fillColor = .yellow
-        case 2:
-            fillColor = .blue
-        default:
-            fillColor = .white
-        }
-        
         let image = renderer.image { ctx in
             
             ctx.cgContext.stroke(rect)
-            ctx.cgContext.setFillColor(fillColor.cgColor)
             ctx.cgContext.fill(rect)
         }
         
         imageView.image = image
     }
+
 }
+

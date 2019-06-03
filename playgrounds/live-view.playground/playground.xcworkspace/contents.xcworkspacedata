@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/ernesto/Projects/iOS Training/CCFW/CocoaPodsDemo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

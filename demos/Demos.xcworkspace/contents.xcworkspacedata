@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DrawingDemo/DrawingDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:InputDemo/InputDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ParsingDemo/ParsingDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NotificationDemo/NotificationDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CollectionViewDemo/CollectionViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CarthageDemo/CarthageDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TableViewDemo/TableViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PostDemo/PostDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:GameDemo/GameDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AlertDemo/AlertDemo.xcodeproj">
+   </FileRef>
+</Workspace>

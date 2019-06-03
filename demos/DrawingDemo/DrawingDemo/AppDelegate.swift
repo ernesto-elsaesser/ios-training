@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  CocoaPodsDemo
+//  DrawingDemo
 //
-//  Created by Ernesto Elsäßer on 10.04.17.
-//  Copyright © 2017 DHBW. All rights reserved.
+//  Created by Ernesto Elsäßer on 04.06.19.
+//  Copyright © 2019 Ernesto Elsäßer. All rights reserved.
 //
 
 import UIKit
