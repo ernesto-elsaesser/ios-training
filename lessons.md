@@ -51,36 +51,32 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Inheritance
 - Protocols
 
-## Apps 
+## App Project
+- Creating A Project
+- The Xcode UI
+- Running in Simulator
+- Project Settings
 - **App Architecture**
 - **App Lifecycle**
+- UIApplicationDelegate
+  - Delegate Pattern
+- Support Files
+- Managing Files
 
-## Xcode Project
-- Creating a new project  
-- The Xcode UI
-- Run in Simulator
-- Project Settings
-
-## Xcode Project 
-- Template App Delegate   
-- Delegate Pattern
-- View Controller
-- UIViewController
-- UIView
-- Resource Files
-- Adding Files
-
+## Storyboards I
+- **The UI Coordinate System**
+- The Storyboard Editor
+- View Controllers
+- Views
+- The UI Library (Label, Button, Switch, Activity Indicator, ...)
 
 # Unit 2: A simple game
 
-
-## Storyboards 
-- **Coordinate System**
-- Examining a Storyboard
-- Views
-- UI Components
-- Buttons
-- IBOutlet & IBAction
+## Storyboards II
+- Custom UI Classes
+- The Assistant Editor
+- IBOutlet
+- IBAction
 - **Task 1**
 - **Task 2**
 
