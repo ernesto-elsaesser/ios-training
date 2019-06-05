@@ -24,23 +24,29 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Creating an Xcode Playground
 - Strong typing
 - Constants and variables
-- Data Types (String, Int, Float, Double, ...)
+- Data Types (Bool, Int, Double, String)
 - Structs
-- Enums (cases, parameters, switch)
-- Functions (signature, parameters, return values)
-- Blocks / Closures (explicit self)
-- Control flow (if else, guard, while, for in)
+- Enums
+- Functions
+  - Signature
+  - Arguments
+- Blocks / Closures
+- Control Flow (if else, guard, while, switch)
 
 ## Swift II
 - Optionals
   - Operators
   - Force Unwrapped Optionals
 - **Collections**
+  - Arrays
+  - Sets
+  - Dictionaries
+  - Iteration
 - Classes
   - Properties
   - Methods
-  - Computed properties
-  - Constructors
+  - Computed Properties
+  - Constructors (self)
 - Scope
 - Inheritance
 - Protocols
