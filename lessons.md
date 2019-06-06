@@ -6,12 +6,9 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - MacBook
 - Apple ID
 - Xcode
-- CocoaPods
-- iOS device (optional)
-
+- iOS Device (optional)
 
 # Unit 1: Swift & Xcode
-
 
 ## Introduction
 - **Introduction Round**
@@ -21,9 +18,9 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 ## Swift I 
 - **Language**
 - **Safety**
-- Creating an Xcode Playground
-- Strong typing
-- Constants and variables
+- Creating An Xcode Playground
+- Strong Typing
+- Constants & Variables
 - Data Types (Bool, Int, Double, String)
 - Structs
 - Enums
@@ -87,47 +84,40 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 
 ## Tables
 - UITableViewController
-  - UITableViewDataSource
-  - UITableViewDelegate
-  - Subclassing
-- TableViewCell
+  - Static Cells
+  - Custom Classes
+  - Dynamic Prototypes
+- UITableViewCell
   - Styles
-  - Subclassing
   - Segues
+  - Custom Classes
 - **Task 3**
 
 ## Assets 
-- Asset Catalogue
-- File Formats (PNG, JPEG, PDF)
-- **Task 4**
 
 ## Scheduling
 - **Dispatch Queues**
 - Timers
-- **Task 5**
+- Date & TimeInterval
+- **Task 4**
 
-## Finishing the Game 
+## Finishing the App
 - UIAlertController
-  - Alerts
-  - Actions
-  - Actionsheets
-- App icons
-- Launch screen
 - UserDefaults
-- Running on a device
-- **Task 6**
-
+- Asset Catalogue
+- Launch Screen
+- Running On Device
+- **Task 5**
 
 # Unit 3: The real world
 
-
 ## Networking 
 - URLSession
-- GET
-- POST
-- Asynchronous Callbacks
+  - GET
+  - POST
+- Callbacks
 - Error Handling
-- Decodable
+- Codable
 
 ## Dependencies
 - **Dependency Management**

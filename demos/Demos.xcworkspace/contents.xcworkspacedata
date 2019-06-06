@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UserDefaultsDemo/UserDefaultsDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:DrawingDemo/DrawingDemo.xcodeproj">
    </FileRef>
    <FileRef
@@ -24,9 +27,6 @@
    </FileRef>
    <FileRef
       location = "group:PostDemo/PostDemo.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:GameDemo/GameDemo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:AlertDemo/AlertDemo.xcodeproj">
