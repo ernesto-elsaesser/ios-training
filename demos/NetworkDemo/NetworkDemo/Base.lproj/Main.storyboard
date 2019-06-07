@@ -13,26 +13,26 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParsingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NetworkDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="NK2-tz-rvw">
-                                <rect key="frame" x="125.5" y="268.5" width="124" height="150"/>
+                                <rect key="frame" x="100.5" y="268.5" width="174" height="150"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2o4-w3-IHc">
-                                        <rect key="frame" x="0.0" y="0.0" width="124" height="75"/>
-                                        <state key="normal" title="Download (sync)"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="174" height="75"/>
+                                        <state key="normal" title="Download (blocking)"/>
                                         <connections>
-                                            <action selector="downloadSyncTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Y9-ht-8id"/>
+                                            <action selector="downloadBlockingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fz2-ye-ar1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eib-ua-QYp">
-                                        <rect key="frame" x="0.0" y="75" width="124" height="75"/>
-                                        <state key="normal" title="Download (async)"/>
+                                        <rect key="frame" x="0.0" y="75" width="174" height="75"/>
+                                        <state key="normal" title="Download (non-blocking)"/>
                                         <connections>
-                                            <action selector="downloadAsyncTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dm4-3L-had"/>
+                                            <action selector="downloadNonBlockingTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfD-cI-McD"/>
                                         </connections>
                                     </button>
                                 </subviews>
