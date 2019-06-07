@@ -74,8 +74,8 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - The Assistant Editor
 - IBOutlet
 - IBAction
-- **Task 1**
-- **Task 2**
+- **Exercise 1**
+- **Exercise 2**
 
 ## Navigation
 - UINavigationController
@@ -91,13 +91,13 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
   - Styles
   - Segues
   - Custom Classes
-- **Task 3**
+- **Exercise 3**
 
 ## Scheduling
 - **Dispatch Queues**
 - Timers
 - Date & TimeInterval
-- **Task 4**
+- **Exercise 4**
 
 ## Finishing the App
 - UIAlertController
@@ -105,7 +105,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Asset Catalogue
 - Launch Screen
 - Running On Device
-- **Task 5**
+- **Exercise 5**
 
 # Unit 3: The real world
 
