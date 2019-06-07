@@ -93,8 +93,6 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
   - Custom Classes
 - **Task 3**
 
-## Assets 
-
 ## Scheduling
 - **Dispatch Queues**
 - Timers
@@ -111,18 +109,16 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 
 # Unit 3: The real world
 
-## Networking 
-- URLSession
-  - GET
-  - POST
-- Callbacks
+## Networking
+- Downloading Data
+- Uploading Data
 - Error Handling
-- Codable
+- Parsing
 
 ## Dependencies
 - **Dependency Management**
-- Finding Packages (https://github.com/matteocrippa/awesome-swift)
 - CocoaPods
+- Finding Packages (https://github.com/matteocrippa/awesome-swift)
 
 ## Wishlist 
 Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
