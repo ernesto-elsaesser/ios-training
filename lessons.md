@@ -117,7 +117,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 
 ## Dependencies
 - **Dependency Management**
-- CocoaPods
+- CocoaPods (https://guides.cocoapods.org/using/using-cocoapods.html)
 - Finding Packages (https://github.com/matteocrippa/awesome-swift)
 
 ## Wishlist 
