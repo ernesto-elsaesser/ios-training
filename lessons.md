@@ -136,8 +136,9 @@ Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
 - Certificates
 - Archiving
 - Upload to App Store
-- **App Store Process**
+- **App Store Process** (https://developer.apple.com/app-store/review/guidelines)
 - **Pricing**
+- Checklist
 
 ## Feedback 
 - **Feedback Round**
