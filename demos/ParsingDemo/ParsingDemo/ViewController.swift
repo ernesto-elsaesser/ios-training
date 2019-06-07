@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  HTTPPOSTDemo
+//  ParsingDemo
 //
 //  Created by Ernesto Elsäßer on 01.07.18.
 //  Copyright © 2018 Ernesto Elsaesser. All rights reserved.
