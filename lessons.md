@@ -93,7 +93,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
   - Custom Classes
 - **Exercise 3**
 
-## The Nice Things
+## The Game
 - Timers
 - **Exercise 4**
 - UIAlertController
