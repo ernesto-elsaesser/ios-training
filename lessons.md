@@ -60,14 +60,14 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Support Files
 - Managing Files
 
+# Unit 2: A simple game
+
 ## Storyboards I
 - **The UI Coordinate System**
 - The Storyboard Editor
 - View Controllers
 - Views
 - The UI Library (Label, Button, Switch, Activity Indicator, ...)
-
-# Unit 2: A simple game
 
 ## Storyboards II
 - Custom UI Classes
@@ -93,23 +93,21 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
   - Custom Classes
 - **Exercise 3**
 
-## Scheduling
-- **Dispatch Queues**
+## The Nice Things
 - Timers
-- Date & TimeInterval
 - **Exercise 4**
-
-## Finishing the App
 - UIAlertController
-- UserDefaults
+- **Exercise 5**
 - Asset Catalogue
 - Launch Screen
-- Running On Device
-- **Exercise 5**
+- UserDefaults
+- Running On A Device
+- **Exercise 6**
 
 # Unit 3: The real world
 
 ## Networking
+- **Dispatch Queues**
 - Downloading Data
 - Uploading Data
 - Error Handling

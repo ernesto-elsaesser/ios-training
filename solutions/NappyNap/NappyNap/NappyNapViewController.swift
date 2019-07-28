@@ -97,9 +97,8 @@ class NappyNapViewController: UIViewController {
         
         let variance = initialTimeToNap - minimalTimeToNap
         let secondsUntilNextNap = ((2 * variance) / (1 + pow(M_E,difficultyLevel))) + minimalTimeToNap
-        let interval = DispatchTimeInterval.milliseconds(Int(secondsUntilNextNap * 1000))
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + interval) { [weak self] in
+        Timer.scheduledTimer(withTimeInterval: secondsUntilNextNap, repeats: false) { [weak self] _ in
             self?.boreRandomStudentToSleep()
         }
     }
