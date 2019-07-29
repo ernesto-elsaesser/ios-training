@@ -22,31 +22,33 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - Strong Typing
 - Constants & Variables
 - Data Types (Bool, Int, Double, String)
-- Structs
 - Enums
 - Functions
   - Signature
   - Arguments
 - Blocks / Closures
-- Control Flow (if else, guard, while, switch)
-
-## Swift II
-- Optionals
-  - Operators
-  - Force Unwrapped Optionals
+- Control Flow (if else, while, switch)
 - **Collections**
   - Arrays
-  - Sets
   - Dictionaries
-  - Iteration
-- Classes
+  - Sets
+  - Iteration (for ... in)
+
+## Swift II
+- Structs & Classes
   - Properties
   - Methods
   - Computed Properties
   - Constructors (self)
-- Scope
-- Inheritance
+  - Scope
+  - Inheritance
 - Protocols
+  - Methods
+  - Properties
+  - Extensions
+- Optionals
+  - Operators (?., ??, if let, guard let)
+  - Force Unwrapped Optionals
 
 ## App Project
 - Creating A Project
