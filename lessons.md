@@ -72,7 +72,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - The UI Library (Label, Button, Switch, Activity Indicator, ...)
 
 ## Storyboards II
-- Custom UI Classes
+- Subclassing UIKit Classes
 - The Assistant Editor
 - IBOutlet
 - IBAction
@@ -80,31 +80,32 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - **Exercise 2**
 
 ## Navigation
+- Segues
 - UINavigationController
 - UITabBarController
-- Segues
 
-## Tables
-- UITableViewController
-  - Static Cells
-  - Custom Classes
-  - Dynamic Prototypes
-- UITableViewCell
-  - Styles
-  - Segues
-  - Custom Classes
+## Tables I
+- UITableViewController & UITableViewCell
+- Static Cells
+- Dynamic Prototypes
+- Subclassing UITableViewController
+- Data Source & Delegate
 - **Exercise 3**
+
+## Tables II
+- UITableViewCell Properties
+- Subclassing UITableViewCell
+- **Exercise 4**
 
 ## The Game
 - Timers
-- **Exercise 4**
-- UIAlertController
 - **Exercise 5**
+- UIAlertController
+- **Exercise 6**
 - Asset Catalogue
 - Launch Screen
 - UserDefaults
-- Running On A Device
-- **Exercise 6**
+- **Bonus Exercise**
 
 # Unit 3: The real world
 
@@ -123,7 +124,8 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 ## Wishlist 
 Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
 
-## Testing 
+## Testing
+- Running On A Device
 - Creating a Test Target
 - Writing Test Cases
 
