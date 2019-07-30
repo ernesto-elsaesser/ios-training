@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Exercise 4-->
         <scene sceneID="l1F-sY-3mU">
             <objects>
-                <tableViewController id="16U-mm-tp8" customClass="MyTableViewController" customModule="Exercise3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="16U-mm-tp8" customClass="MyTableViewController" customModule="Exercise4" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RKy-UO-xKl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" id="7OD-oC-7sG" customClass="MyTableViewCell" customModule="Exercise3" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyTableViewCell" id="7OD-oC-7sG" customClass="MyTableViewCell" customModule="Exercise4" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7OD-oC-7sG" id="O6W-Q8-rT2">
@@ -44,7 +44,7 @@
                             <outlet property="delegate" destination="16U-mm-tp8" id="IDv-G7-KxZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="nxZ-G6-5i8"/>
+                    <navigationItem key="navigationItem" title="Exercise 4" id="nxZ-G6-5i8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Z9-ds-K1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

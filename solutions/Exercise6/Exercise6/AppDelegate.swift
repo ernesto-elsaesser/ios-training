@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  SimpleGame
+//  GameDemo
 //
-//  Created by Ernesto Elsäßer on 06.06.19.
-//  Copyright © 2019 Ernesto Elsäßer. All rights reserved.
+//  Created by Ernesto Elsäßer on 10.06.18.
+//  Copyright © 2018 Ernesto Elsaesser. All rights reserved.
 //
 
 import UIKit

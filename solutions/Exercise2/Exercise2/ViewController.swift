@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         default: return
         }
         
-        button.backgroundColor = .orange
+        button.titleLabel?.textColor = .orange
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
-        sender.backgroundColor = .clear
+        sender.titleLabel?.textColor = .blue
     }
 }
 

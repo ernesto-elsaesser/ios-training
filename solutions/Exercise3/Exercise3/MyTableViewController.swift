@@ -10,19 +10,27 @@ import UIKit
 
 class MyTableViewController: UITableViewController {
     
+    var markedRows: Set<Int> = Set()
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        return tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath)
+        cell.textLabel?.text = "unmarked"
+        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let cell = tableView.cellForRow(at: indexPath)
-        let myCell = cell as? MyTableViewCell
-        myCell?.toggle()
+        
+        if markedRows.contains(indexPath.row) {
+            cell?.textLabel?.text = "unmarked"
+            markedRows.remove(indexPath.row)
+        } else {
+            cell?.textLabel?.text = "MARKED"
+            markedRows.insert(indexPath.row)
+        }
     }
 }

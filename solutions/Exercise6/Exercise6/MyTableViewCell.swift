@@ -12,10 +12,11 @@ class MyTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
     
-    var isMarked = false
+    func mark() {
+        label.text = "MARKED"
+    }
     
-    func toggle() {
-        isMarked = !isMarked
-        label.text = isMarked ? "MARKED" : "unmarked"
+    func unmark() {
+        label.text = "unmarked"
     }
 }

@@ -64,14 +64,11 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 
 # Unit 2: A simple game
 
-## Storyboards I
+## Storyboards
 - **The UI Coordinate System**
 - The Storyboard Editor
-- View Controllers
-- Views
-- The UI Library (Label, Button, Switch, Activity Indicator, ...)
-
-## Storyboards II
+- View Controllers & Views
+- The UI Library
 - Subclassing UIKit Classes
 - The Assistant Editor
 - IBOutlet
@@ -84,15 +81,13 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - UINavigationController
 - UITabBarController
 
-## Tables I
+## Tables
 - UITableViewController & UITableViewCell
 - Static Cells
 - Dynamic Prototypes
 - Subclassing UITableViewController
 - Data Source & Delegate
 - **Exercise 3**
-
-## Tables II
 - UITableViewCell Properties
 - Subclassing UITableViewCell
 - **Exercise 4**
