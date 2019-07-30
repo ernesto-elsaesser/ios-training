@@ -15,14 +15,14 @@ class MyTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         return tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell", for: indexPath)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.cellForRow(at: indexPath)
-        if let myCell = cell as? MyTableViewCell {
-            myCell.toggle()
-        }
+        let myCell = cell as? MyTableViewCell
+        myCell?.toggle()
     }
 }
