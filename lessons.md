@@ -102,9 +102,9 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - **Exercise 5**
 - UIAlertController
 - **Exercise 6**
-- Asset Catalogue
-- Launch Screen
 - UserDefaults
+- Using Images
+- Launch Screen
 - **Bonus Exercise**
 
 # Unit 3: The real world

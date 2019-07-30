@@ -45,8 +45,7 @@ class MyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let cell = tableView.cellForRow(at: indexPath)
-        if let myCell = cell as? MyTableViewCell {
-            myCell.unmark()
-        }
+        let myCell = cell as? MyTableViewCell
+        myCell?.unmark()
     }
 }
