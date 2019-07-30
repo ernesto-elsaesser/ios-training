@@ -40,6 +40,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
   - Methods
   - Computed Properties
   - Constructors (self)
+  - Mutability
   - Scope
   - Inheritance
 - Protocols
