@@ -117,19 +117,19 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - CocoaPods (https://guides.cocoapods.org/using/using-cocoapods.html)
 - Finding Packages (https://github.com/matteocrippa/awesome-swift)
 
-## Wishlist 
-Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
-
-## Testing
-- Running On A Device
-- Creating a Test Target
-- Writing Test Cases
-
 ## Platform 
 - **Hardware**
 - **Software**
 
-## Distribution 
+## Wishlist 
+Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
+
+## Testing
+- Creating a Test Target
+- Writing Test Cases
+- Running On A Device
+
+## Distribution
 - Provisioning Profiles
 - Certificates
 - Archiving
