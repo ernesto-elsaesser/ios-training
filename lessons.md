@@ -122,7 +122,7 @@ Bold topics have accompanying slides (https://github.com/ernesto-elsaesser/ios-t
 - **Software**
 
 ## Wishlist 
-Ideas: Notifications, UIDatePicker, File Management, Localization, Location, ...
+Ideas: Animation, Constraints, Notifications, File Management, Location, ...
 
 ## Testing
 - Creating a Test Target
